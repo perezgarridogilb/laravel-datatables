@@ -22,6 +22,7 @@ $controller = ArticuloController::class;
 $method = 'index';
 Route::resource('articulos', $controller);
 Route::put('/articulos/{id}/edit', [ArticuloController::class, 'update']);
+Route::post('/articulos/{id}/destroy', [ArticuloController::class, 'destroy']);
 
 
 
